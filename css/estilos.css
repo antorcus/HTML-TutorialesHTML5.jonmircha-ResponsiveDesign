@@ -1,0 +1,59 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: "Chalet";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/ChaletNewYorkNineteenSixty.ttf") format("truetype"),
+	url("../fonts/ChaletLondonNineteenSixty.ttf") format("truetype");
+}
+body{
+	background: #212121;
+	color: #FFF;
+	font-family: "Chalet", Helvetica, Verdana; /*Fuentes no seguras entre comillas y seguras sin comillas*/
+	font-size: 2em; /*Valor de fuente global, los estándar son: 16px, 12pt, 100%, 1em (ancho de M)*/
+}
+h1{
+	color: #F60;
+	margin: 0.25em auto; /*Primero es arriba y abajo, segundo lados*/
+	text-align: center;
+	text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5); /*Distancia respecto a texto, respecto a Y, efecto 		blur, color rgba (a es opacidad)*/
+}
+header, nav, footer{
+	background: #1E6381;
+	border-radius: 0.5em;
+	margin: 0.5em auto;
+	/*Uso de máximos y mínimos para responsive design*/
+	max-width: 960px;
+	padding: 0.25em;
+	text-align: center;
+}
+#contenedor{
+	margin: 0.5em auto;
+	max-width: 960px;
+	padding: 0;
+	text-align: center;
+}
+#principal, aside{
+	background: #1E6381;
+	border-radius: 0.5em;
+	display: inline-block; /*Cómo se mostrara la disposición de elementos, elemento en línea y después 		en bloque*/
+	margin: 0.25em auto;
+	max-width: 960px;
+	min-height: 200px;
+	padding: 0.25em;
+	text-align: center;
+	vertical-align: top;
+	width: 65%;
+}
+article{
+	background: #011E30;
+	border-radius: 0.5em;
+	min-height: 140px;
+	padding: 0.25em;
+}
+aside{
+	width: 29%;
+}
